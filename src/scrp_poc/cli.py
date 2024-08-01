@@ -2,6 +2,7 @@
 """Command line interface entrypoint"""
 import click
 from .text_extractor import print_page
+from .regex_soup import print_results
 
 
 @click.command
@@ -14,3 +15,4 @@ echoing a message and calling the print_page function.
     """
     click.echo("My scraper app.")
     print_page()
+    print_results()
