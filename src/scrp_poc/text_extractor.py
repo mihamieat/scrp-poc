@@ -22,6 +22,7 @@ def print_page():
 title index, start index length, end index, and title string.
     """
 
+    click.echo(f"***Text extractor from {URL}***")
     click.echo(f"#######\npage code:\n#######\n\n{html_str}\n")
     click.echo(f"#######\ntitle index scraped:\n#######\n\n{title_index}\n")
     click.echo(f"#######\nstart index lenght scraped:\n#######\n\n{start_index}\n")

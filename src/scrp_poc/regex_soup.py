@@ -22,4 +22,5 @@ def print_results():
     This function prints the extracted title.
     """
 
+    click.echo(f"***Regex results from {URL}***")
     click.echo(f"title: {title}")
