@@ -3,7 +3,7 @@ name = "scrp-poc"
 version = "0.1.0"
 description = ""
 authors = ["Mihamina Rakotovazaha <r.miham@yahoo.com>"]
-readme = "README.readme.md"
+readme = "README.md"
 packages = [{include = "scrp_poc", from = "src"}]
 
 [tool.poetry.scripts]
