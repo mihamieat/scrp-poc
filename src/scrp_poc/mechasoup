@@ -1,0 +1,21 @@
+# -*- coding: utf-8 -*-
+"""MechanicalSoup usage package."""
+
+import mechanicalsoup
+import click
+
+
+URL = "http://olympus.realpython.org/login"
+browser = mechanicalsoup.Browser()
+page = browser.get(URL)
+html = page.soup
+
+form = html.select("form")[0]
+form.select("input")[0]["value"] = "zeus"
+form.select("input")[1]["value"] = "ThunderDude"
+
+profiles_page = browser.submit(form, page.url)
+
+click.echo(page)
+click.echo(page.soup)
+click.echo(page.url)
